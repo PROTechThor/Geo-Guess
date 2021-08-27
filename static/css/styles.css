@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Londrina+Solid|Nunito:400,300);
+
+:root {
+  --blue: #53BDFF;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #323232;
+  color: #eee;
+}
+
+#main {
+max-width: 800px;
+margin: auto;
+margin-top: 10vh;
+}
+
+#name {
+text-transform: uppercase;
+text-align: center;
+color: var(--blue);
+font-family: "Londrina Solid", serif;
+font-size: 3rem;
+}
+
+.tagline {
+text-align: center;
+}
+
+.how-it-works{
+text-align: center;
+font-size: 1.8rem;
+font-family: Nunito;
+}
+
+h3 {
+text-transform: uppercase;
+color: var(--blue);
+}
+
+.location-box {
+background: #292929;
+padding: 20px;
+border-bottom: 2px solid #000;
+}
+
+.lat-long {
+color: #808080;
+font-size: 0.9rem;
+}
+
+.area-container {
+color: #fff;
+font-size: 1.1rem;
+}
+
+#newloc{
+  outline: none;
+  margin-top: 10px;
+  border: 0;
+  color: #eee;
+  background: #000;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  transition: .3s;
+  cursor: pointer;
+}
+
+#newloc:hover{
+  border-radius: 5px;
+  background: #111;
+}
+#input-area{
+  background: rgb(83, 189, 225, 0.3);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+label {
+  font-size: 0.9rem;
+  color: #ddd;
+  margin: 20px 0;  
+}
+
+input {
+  outline: none;
+  padding: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-right: 5px;
+  border: 1px solid #aaa;
+  color: gray;
+}
+#guessBtn{
+  border: none;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  background: var(--blue);
+  color: white;
+  transition: .3s;
+  margin: 10px 0;
+  font-family: "Londrina Solid", serif;
+  text-shadow: 1px 2px 0 blue;
+}
+#guessBtn:hover{
+  background-color: rgb(83, 189, 215);
+}
+#distance{
+  margin: 20px 0;
+  line-height: 25px;
+  color: #eee;
+  text-transform: uppercase; 
+  font-weight: 900;
+}
+
+#distance span {
+  color: #fff;
+  text-shadow: 1px 2px 0 #000; 
+}
+
+#remark {
+  font-family: serif;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 20px;
+  transition: .3s;
+  text-shadow: 1px 2px 0 #000; 
+
+}

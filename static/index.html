@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Geo Guess - GGG</title>
+      <meta charset="UTF-8" />
+      <script type="module" src="static/js/index.js"></script>
+      <script type="module" src="static/js/random.js"></script>
+      <link rel="stylesheet" href="static/css/styles.css" />
+   </head>
+   <body>
+      <div id="main">
+         <h1 id="name"> Geo Guess</h1>
+         <h3 class="tagline"> A distance guessing game </h3>
+         <p class="how-it-works"> How far are you from another city? Make a guess! </p>
+         <div class="location-box">
+            <h3> Your location: </h3>
+            <div id="current-location">
+               <div class="lat-long">Latitude <span id="current-lat"> </span>, Longitude <span id="current-long"> </span> </div>
+               <div class="area-container"> <span id="current-area"> </span> </div>
+            </div>
+         </div>
+         <div class="location-box">
+            <h3> Random location: </h3>
+            <div id="current-location">
+               <div class="lat-long">Latitude <span id="random-lat"> </span>, Longitude <span id="random-long"> </span> </div>
+               <div class="area-container"> <span id="random-area"> </span> </div>
+            </div>
+            <button id="newloc">Generate new Location</button> 
+         </div>
+
+         <div id="input-area">
+            <div>
+            <label for="dist"> Guess the distance (in kilometers) between your location and the random location:</label>
+            <br/>
+            <input type="number" id="distInput" name="dist" placeholder="Distance in km">
+            <button id="guessBtn">Guess</button> 
+            </div>
+            <div id="distance"> 
+               Your guess: <span id="guessVal"></span> <br/>
+               Actual distance: <span id="actualVal"></span><br/>
+               Difference: <span id="accuracy"></span><br/>              
+            </div>
+            <p id="remark"></p>
+            
+         </div>
+
+         <br/>
+      </div>
+
+   </body>
+</html>
