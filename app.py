@@ -31,4 +31,4 @@ def getGeo():
   return geo_data
 
 # run app  
-app.run(debug=True)
+# app.run(debug=True)
