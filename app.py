@@ -1,11 +1,11 @@
-from flask import Flask, jsonify, request, render_template, json
+from flask import Flask, jsonify, request, render_template, json,  send_from_directory
 import reverse_geocoder as rg
 
-app = Flask(__name__, static_url_path="/static", static_folder='/home/cleo/geo/static')
+app = Flask(__name__, static_url_path='')
 
 @app.route('/')
 def home_page():
-    return app.send_static_file('index.html')
+    return send_from_directory("static/", 'index.html') 
     
 
 @app.route('/geo', methods=['POST'])
